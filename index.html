@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazi</title>
+    <style>
+        /* Estilos Gerais Modernos */
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffeef8 0%, #f6e6ff 100%);
+            color: #2d3436;
+        }
+
+        /* Cabeçalho Colorido e Vibrante */
+        header {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            margin: 15px 0 0 0;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        /* Menu de Navegação Fashion */
+        nav {
+            background-color: #111;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            padding: 18px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff416c;
+            color: white;
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .introducao h2 {
+            font-size: 2.2rem;
+            color: #ff416c;
+            margin-bottom: 10px;
+        }
+
+        .introducao p {
+            font-size: 1.1rem;
+            color: #636e72;
+        }
+
+        /* Grade de Cards */
+        .grade-eventos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Estilizado */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 65, 108, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 65, 108, 0.2);
+        }
+
+        /* Imagens Corrigidas de Alta Resolução */
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Conteúdo do Card */
+        .card-conteudo {
+            padding: 25px;
+        }
+
+        .card-conteudo h3 {
+            margin-top: 0;
+            color: #ff4b2b;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .card-conteudo p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #2d3436;
+            margin-bottom: 20px;
+        }
+
+        /* Botão de Ação Interativo */
+        .botao-ver {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .botao-ver:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Rodapé Moderno */
+        footer {
+            background-color: #111;
+            color: #b3b3b3;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: #ff416c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Topo da Página -->
+    <header>
+        <h1>Glow & Co.</h1>
+        <p>Minhas inspirações de maquiagem para arrasar sempre!</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Copa do Mundo</a>
+        <a href="#">Carnaval</a>
+        <a href="#">Halloween</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        
+        <section class="introducao">
+            <h2>Escolha o seu Evento</h2>
+            <p>Clique nos cards abaixo para descobrir combinações de cores e produtos para cada festa.</p>
+        </section>
+
+        <!-- Seções de Inspiração -->
+        <div class="grade-eventos">
+
+            <!-- Card Copa do Mundo -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Maquiagem Colorida para Eventos">
+                <div class="card-conteudo">
+                    <h3>Copa do Mundo</h3>
+                    <p>Delineados gráficos em verde e amarelo, muito glitter dourado e pedrarias para torcer com muito estilo e glamour.</p>
+                    <a href="#" class="botao-ver">Ver Inspirações</a>
+                </div>
+            </div>
+
+            <!-- Card Carnaval -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Maquiagem Neon Vibrante">
+                <div class="card-conteudo">
+                    <h3>Carnaval</h3>
+                    <p>Cores vibrantes, sombras neon e muito brilho biodegradável. Roteiros de maquiagens que duram o dia inteiro no bloco.</p>
+                    <a href="#" class="botao-ver">Ver Inspirações</a>
+                </div>
+            </div>
+
+            <!-- Card Halloween -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Paleta de Sombras Artísticas">
+                <div class="card-conteudo">
+                    <h3>Halloween</h3>
+                    <p>Inspirações que vão do clássico "terror realista" até makes mais fofas e fáceis de fazer de última hora.</p>
+                    <a href="#" class="botao-ver">Ver Inspirações</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Criado por <strong>Você</strong>. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
