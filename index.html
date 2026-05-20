@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grazi</title>
+    <title>Mundo da Make | Inspirações</title>
     <style>
-        /* Estilos Gerais Modernos */
+        /* Configurações Gerais */
         body {
-            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ffeef8 0%, #f6e6ff 100%);
+            background: linear-gradient(135deg, #fff5f7 0%, #f1e4ff 100%);
             color: #2d3436;
         }
 
-        /* Cabeçalho Colorido e Vibrante */
+        /* Topo Neon e Colorido */
         header {
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            background: linear-gradient(45deg, #ff007f, #ff4500, #7000ff);
+            background-size: 200% 200%;
+            animation: CoresEmMovimento 10s ease infinite;
             color: white;
             text-align: center;
             padding: 60px 20px;
-            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+            box-shadow: 0 4px 20px rgba(255, 0, 127, 0.4);
+        }
+
+        @keyframes CoresEmMovimento {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         header h1 {
             margin: 0;
-            font-size: 3rem;
-            text-transform: uppercase;
+            font-size: 3.2rem;
             letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
         }
 
         header p {
             margin: 15px 0 0 0;
             font-size: 1.3rem;
-            font-weight: 300;
+            font-weight: bold;
+            opacity: 0.9;
         }
 
-        /* Menu de Navegação Fashion */
+        /* Menu de Navegação Superior */
         nav {
             background-color: #111;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         nav a {
             display: inline-block;
-            color: #fff;
+            color: white;
             padding: 18px 25px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: bold;
             text-transform: uppercase;
             font-size: 0.9rem;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            background-color: #ff416c;
+            background-color: #ff007f;
             color: white;
         }
 
-        /* Conteúdo Principal */
+        /* Área de Conteúdo */
         .container {
             max-width: 1100px;
             margin: 40px auto;
@@ -76,39 +83,34 @@
         }
 
         .introducao h2 {
-            font-size: 2.2rem;
-            color: #ff416c;
+            font-size: 2.5rem;
+            color: #7000ff;
             margin-bottom: 10px;
         }
 
-        .introducao p {
-            font-size: 1.1rem;
-            color: #636e72;
-        }
-
-        /* Grade de Cards */
+        /* Organização dos Cards (Grade) */
         .grade-eventos {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        /* Card Estilizado */
+        /* Design Moderno do Card */
         .card {
             background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             overflow: hidden;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 65, 108, 0.1);
+            border: 2px solid rgba(255, 0, 127, 0.05);
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(255, 65, 108, 0.2);
+            box-shadow: 0 15px 30px rgba(255, 0, 127, 0.25);
         }
 
-        /* Imagens Corrigidas de Alta Resolução */
+        /* Fotos Corrigidas e Ajustadas */
         .card img {
             width: 100%;
             height: 250px;
@@ -116,67 +118,69 @@
             display: block;
         }
 
-        /* Conteúdo do Card */
+        /* Informações do Card */
         .card-conteudo {
             padding: 25px;
         }
 
         .card-conteudo h3 {
             margin-top: 0;
-            color: #ff4b2b;
-            font-size: 1.4rem;
-            margin-bottom: 10px;
+            color: #ff007f;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
         }
 
         .card-conteudo p {
             font-size: 1rem;
             line-height: 1.6;
-            color: #2d3436;
-            margin-bottom: 20px;
+            color: #444;
+            margin-bottom: 25px;
         }
 
-        /* Botão de Ação Interativo */
+        /* Botões Estilizados */
         .botao-ver {
             display: inline-block;
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            background: linear-gradient(45deg, #ff007f, #ff4500);
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-weight: bold;
             font-size: 0.9rem;
-            transition: transform 0.2s, opacity 0.2s;
+            transition: 0.2s;
+            box-shadow: 0 4px 10px rgba(255, 0, 127, 0.2);
         }
 
         .botao-ver:hover {
             transform: scale(1.05);
-            opacity: 0.9;
+            box-shadow: 0 6px 15px rgba(255, 0, 127, 0.4);
         }
 
-        /* Rodapé Moderno */
+        /* Rodapé Negro */
         footer {
             background-color: #111;
-            color: #b3b3b3;
+            color: #aaa;
             text-align: center;
             padding: 30px;
             margin-top: 60px;
             font-size: 0.95rem;
         }
 
-        footer strong {
-            color: #ff416c;
+        footer span {
+            color: #ff007f;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <!-- Topo da Página -->
+    <!-- Cabeçalho Principal -->
     <header>
-        <h1>Glow & Co.</h1>
-        <p>Minhas inspirações de maquiagem para arrasar sempre!</p>
+        <h1>Mundo da Make</h1>
+        <p>Encontre as melhores inspirações para brilhar em qualquer evento!</p>
     </header>
 
-    <!-- Menu -->
+    <!-- Menu de Navegação -->
     <nav>
         <a href="#">Início</a>
         <a href="#">Copa do Mundo</a>
@@ -188,16 +192,16 @@
     <div class="container">
         
         <section class="introducao">
-            <h2>Escolha o seu Evento</h2>
-            <p>Clique nos cards abaixo para descobrir combinações de cores e produtos para cada festa.</p>
+            <h2>Explore as Inspirações</h2>
+            <p>Selecione um tema abaixo para ver combinações de cores e tutoriais perfeitos.</p>
         </section>
 
-        <!-- Seções de Inspiração -->
+        <!-- Grade de Eventos -->
         <div class="grade-eventos">
 
             <!-- Card Copa do Mundo -->
             <div class="card">
-                <img src="https://unsplash.com" alt="Maquiagem Colorida para Eventos">
+                <img src="https://unsplash.com" alt="Maquiagem Olhos Coloridos">
                 <div class="card-conteudo">
                     <h3>Copa do Mundo</h3>
                     <p>Delineados gráficos em verde e amarelo, muito glitter dourado e pedrarias para torcer com muito estilo e glamour.</p>
@@ -207,7 +211,7 @@
 
             <!-- Card Carnaval -->
             <div class="card">
-                <img src="https://unsplash.com" alt="Maquiagem Neon Vibrante">
+                <img src="https://unsplash.com" alt="Batom e Maquiagem Vibrante">
                 <div class="card-conteudo">
                     <h3>Carnaval</h3>
                     <p>Cores vibrantes, sombras neon e muito brilho biodegradável. Roteiros de maquiagens que duram o dia inteiro no bloco.</p>
@@ -217,7 +221,7 @@
 
             <!-- Card Halloween -->
             <div class="card">
-                <img src="https://unsplash.com" alt="Paleta de Sombras Artísticas">
+                <img src="https://unsplash.com" alt="Paleta de sombras de Maquiagem">
                 <div class="card-conteudo">
                     <h3>Halloween</h3>
                     <p>Inspirações que vão do clássico "terror realista" até makes mais fofas e fáceis de fazer de última hora.</p>
@@ -231,7 +235,7 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 - Criado por <strong>Você</strong>. Todos os direitos reservados.</p>
+        <p>&copy; 2026 - Criado por <span>André Corrêa Lima</span>. Todos os direitos reservados.</p>
     </footer>
 
 </body>
